@@ -1,0 +1,336 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+    /*background-image: url('images/backpic.jpg');*/
+   /* background-color: rgba(127, 255, 212, 0.656);xx*/
+}
+/* 在129行 */
+@keyframes flotageone{
+    100% {
+        transform: translateX(-1050px);/*这个地方是要用JS换数据的，换成盒子个数*盒子长度(350px)*/
+    }
+}
+ul{
+    list-style: none;
+}
+.active{
+    display:block;/*按下按钮，添加.active类，就能看见主盒子发生改变，或者顺子你想直接修改也行*/
+    /*记得三个变化：原来的盒子隐藏，现在的盒子出现，左边的提示栏对应元素样式改变*/
+}
+.centerBody{
+    margin:0 auto;
+    margin-top:65px;
+    width:750px;
+    height:550px;
+    background-color: rgb(255, 255, 255);
+}
+.centerBody .header{
+    display: flex;
+    justify-self: start;
+    height:50px;
+    background-color: rgb(53, 239, 239);
+}
+.centerBody .header .logo{
+    float: left;
+}
+.centerBody .header .title{
+    width: 700px;
+    height: 50px;
+    text-align: right;
+    line-height: 50px;
+}
+.centerBody .middle{
+    display: flex;
+    justify-self: start;
+    width:750px;
+    height:500px;
+    background-color: rgba(240, 248, 255, 0.826);
+}
+.middle .prompt{
+    cursor:pointer;
+    width: 50px;
+    height: 500px;
+    /*border-right:1px solid rgba(127, 255, 212);*/
+}
+.middle .prompt ul li{
+    list-style-type: none;
+    width: 49px;
+    height: 50px;
+}
+.middle .prompt ul li:hover{
+    background-color: aqua;
+    color:aliceblue;
+    font-size: large;
+}
+.middle .center > div{
+    width: 700px;
+    height: 500px;
+}
+.footer{
+    position:fixed;
+    bottom:10px;
+    left:450px;
+}
+.footer > div{
+    padding:2px;
+    float: left;
+}
+.footer > a{
+    border-right:1px solid black;
+}
+/*第一个盒子：标签,或者说广场*/
+/* .middle .center .center1{
+    display: none;
+} */
+.middle .center .center1 .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.middle .center1 .bottom{
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+}
+.middle .center1 .bottom .mainArea{
+    height: 2000px;
+    background-color:aqua;
+}
+
+/*第二个盒子：树洞*/
+/* .center2{
+    display:none
+} */
+.center2  .middle-top{
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 2px solid rgb(53, 239, 239);
+    background-color: transparent;
+}
+
+.center2  .center{
+    width: 750px;
+    height: 450px;
+    background-color: transparent;
+}
+.center2 .center{
+    width: 750px;
+    height: 450px;
+    float:left;
+}
+.center2 .center > div{
+    height: 135px;
+    width: 700px;
+    margin-top:11px;
+    overflow: hidden;
+    /*background-color: cornflowerblue;*/
+}
+.center2 .center ul{
+    display: flex;
+    height: 135px;
+    list-style: none;
+
+    animation-name: flotageone;
+    animation-duration: 12s;
+    animation-delay:0s;
+    animation-timing-function:linear;
+}
+.center2 .center li{
+    flex-shrink: 0;
+    height: 135px;
+    width: 350px; 
+    border-right:20px solid transparent;                                                                                                                                              
+}
+.center2 .center .line-top{
+    width: 340px;
+    height: 90px;
+    padding:5px;
+    background-color:rgb(156, 248, 248);
+}
+.center2 .center .line-other{
+    width: 350px;
+    height: 35px;
+    background-color: azure;
+}
+.center2 .center .line-other > div{
+    float: left;
+    padding-right:15px;
+    font-size: smaller;
+    line-height: 35px;
+    color:rgb(130, 130, 130);
+} 
+/*第三个盒子：单人聊天*/
+/* .middle .center .center3{
+    display:none;
+} */
+/*按下其他按钮，变成none*/
+.middle .center .center3 .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.middle .center .center3 .bottom{
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+}
+.middle .center .center3 .bottom .mainArea{
+    height: 2000px;
+    background-color:aquamarine;
+}
+/*第四个盒子：多人聊天*/
+/* .middle .center .center4{
+    display:none;
+} */
+/*按下其他按钮，变成none*/
+.middle .center .center4 .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.middle .center .center4 .bottom{
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+}
+.middle .center .center4 .bottom .mainArea{
+    height: 2000px;
+    background-color:aquamarine;
+}
+/*第五个盒子：消息*/
+/* .middle .center .center5{
+    display:none;
+} */
+/*按下其他按钮，变成none*/
+.middle .center .center5 .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.fourArea ul{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 5px;
+}
+.fourArea ul li{
+    width: 175px;
+    height: 50px;
+    list-style-type: none;
+    background-color: cornsilk;
+}
+.checkSomeone{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    background-color:white ;
+}
+.checkSomeone input{
+    width: 600px;
+    height: 100%;
+    border:none;
+    outline:medium;
+}
+.middle .center .center5 .bottom{
+    width: 700px;
+    height: 380px;
+    overflow: hidden;
+}
+.middle .center .center5 .bottom .mainArea{
+    height: 2000px;
+    background-color:aquamarine;
+}
+
+/*第六个盒子：我的*/
+/* .middle .center .center6{
+    display:block;
+} */
+/*按下其他按钮，变成none*/
+.middle .center .center6 .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.middle .center .center6 .bottom{
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+}
+.middle .center .center6 .bottom .mainArea{
+    height: 2000px;
+    background-color:aquamarine;
+}
+.bottom .left{
+    width: 150px;
+    height: 450px;
+    background-color: rgb(204, 255, 255);
+}
+.uname{
+    height: 60px;
+    line-height:60px;
+    text-align: center;
+}
+.bottom .left .touxiang{
+    width: 1150px;
+    height: 150px;
+}
+.bottom .left .my-prompt{
+    cursor:pointer;
+    width:150px;
+}
+.bottom .left .my-prompt li{
+    position:relative;
+    height: 40px;
+}
+.bottom .left .my-prompt li .title{
+    position:absolute;
+    left:0;
+    width: 100px;
+    height: 40px;
+}
+.bottom .left .my-prompt li .arrow{
+    position:absolute;
+    width: 20px;
+    right:0;
+}
+.bottom .left .my-prompt li:hover{
+    background-color: aqua;
+    color:aliceblue;
+    font-size: large;
+}
+/* 4.26高昊新增 */
+/* 删除了所有的display 将display变成了两个类选择器一个是none 一个是block */
+.activefont{
+    background-color: aqua;
+    font-size: large;
+    color:aliceblue;
+}
+.none{
+    display: none;
+}
+/* 新增结束 */
+.footer{
+    position:fixed;
+    bottom:10px;
+    left:450px;
+}
+.footer > div{
+    padding:2px;
+    float: left;
+}
+.footer > a{
+    border-right:1px solid black;
+}

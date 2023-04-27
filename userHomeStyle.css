@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+    /*background-image: url('images/backpic.jpg');*/
+   /* background-color: rgba(127, 255, 212, 0.656);xx*/
+}
+.active{
+    display:block;/*记得三个变化*/
+}
+.centerBody{
+    margin:0 auto;
+    margin-top:65px;
+    width:750px;
+    height:550px;
+    background-color: rgb(255, 255, 255);
+}
+.centerBody .header{
+    display: flex;
+    justify-self: start;
+    height:50px;
+    background-color: rgb(53, 239, 239);
+}
+.centerBody .header .logo{
+    float: left;
+}
+.centerBody .header .title{
+    width: 700px;
+    height: 50px;
+    padding-right:10px;
+    text-align: right;
+    line-height: 50px;
+}
+.centerBody .middle{
+    display: flex;
+    justify-self: start;
+    width:750px;
+    height:500px;
+    background-color: rgba(240, 248, 255, 0.826);
+}
+.middle .prompt{
+    cursor:pointer;
+    width: 50px;
+    height: 500px;
+    /*border-right:1px solid rgba(127, 255, 212);*/
+}
+.middle .prompt ul li{
+    list-style-type: none;
+    width: 49px;
+    height: 50px;
+    background-color: aliceblue;
+}
+.middle .prompt ul li:hover{
+    background-color: aqua;
+    color:aliceblue;
+    font-size: large;
+}
+.middle .center > div{
+    width: 700px;
+    height: 500px;
+}
+.middle .center .user-home .top{
+    width: 700px;
+    height: 50px;
+    text-align:center;
+    line-height: 50px;
+    background-color: aliceblue;
+}
+.middle .user-home .top {
+    position:relative;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid aqua;
+    background-color: aqua;
+}
+.middle .user-home .top .back{
+    position:absolute;
+    left:2px;
+    width: 50px;
+    cursor:pointer;
+}
+.middle .user-home .top .back:hover{
+    background-color: aqua;
+    color: aliceblue;
+    font-size: large;
+}
+.middle .user-home .top .title{
+    position:absolute;
+    left:245px;
+    width: 200px;
+}
+.middle .user-home .top .hidden{
+    position:absolute;
+    right:100px;
+    width: 50px;
+    background-color: azure;
+}
+.middle .user-home .top .other{
+    position:absolute;
+    right:20px;
+    cursor:pointer;
+}
+.middle .user-home .bottom{
+    width: 100%;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.middle .user-home .bottom .user-head{
+    width: 100% ;
+    height: 200px;
+    background-color: rgb(170, 252, 252);
+}
+.middle .user-home .bottom .user-head .head-pic{
+    margin:0 auto;
+    width:90px;
+    height: 90px;
+    border-radius: 45px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../images/trykimmi.jpg");
+}
+.middle .user-home .bottom .user-head .sign{
+    margin-top:10px;
+    text-align: center;
+    font-size: small;
+    color:rgb(86, 86, 86);
+}
+.middle .user-home .bottom .user-head .guanzhu{
+    display:flex;
+    margin-top:15px;
+    justify-content: center;
+    background-color: transparent;
+    color:rgb(130, 130, 130);
+}
+.middle .user-home .bottom .user-head .guanzhu > div{
+    width: 30%;
+    text-align: center;
+}
+.middle .user-home .bottom .user-head .operate{
+    display:flex;
+    margin-top:10px;
+    justify-content: center;
+    cursor:pointer;
+    background-color: transparent;
+}
+.middle .user-home .bottom .user-head .operate> div{
+    width: 30%;
+    text-align: center;
+}
+.middle .user-home .bottom .user-head .operate > div:hover{
+    background-color: aqua;
+    font-size: large;
+    color:aliceblue;
+}
+.middle .user-home .bottom .blogs{
+    width: 700px;
+    height: 248px;
+    background-color: aliceblue;
+}
+.middle .user-home .bottom .blogs ul li{
+    width: 700px;
+    height: 200px;
+}
+.middle .user-home .bottom .user-prompt {
+    display:flex;
+    justify-content: center;
+}
+.middle .user-home .bottom .user-prompt > div{
+    width: 32.3%;
+    text-align: center;
+    display:none;/*顺子上监听器，上了监听器，滑动之后出现*/
+}
+
+.footer{
+    position:fixed;
+    bottom:10px;
+    left:450px;
+}
+.footer > div{
+    padding:2px;
+    float: left;
+}
+.footer > a{
+    border-right:1px solid black;
+}
